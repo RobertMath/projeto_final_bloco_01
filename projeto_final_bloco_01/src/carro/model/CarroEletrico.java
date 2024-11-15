@@ -1,11 +1,11 @@
 package carro.model;
 
-public class CarroEletrico extends Carro{
-	
+public class CarroEletrico extends Carro {
+
 	private int autonomia;
-	
-	public CarroEletrico(String modelo, String cor, int ano,int autonomia) {
-		super(modelo, cor, ano);
+
+	public CarroEletrico(int numero, int ano, String modelo, String cor, int autonomia) {
+		super(numero, ano, modelo, cor);
 		this.autonomia = autonomia;
 	}
 
@@ -16,7 +16,7 @@ public class CarroEletrico extends Carro{
 	public void setAutonomia(int autonomia) {
 		this.autonomia = autonomia;
 	}
-	
+
 	@Override
 	public void visualizar() {
 		super.visualizar();
